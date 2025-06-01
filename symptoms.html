@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Examine Depression | Symptoms</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>Examine Depression</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="causes.html">Causes</a>
+  <a href="symptoms.html" class="active">Symptoms</a>
+  <a href="treatment.html">Treatment</a>
+  <a href="resources.html">Resources</a>
+</nav>
+
+<div class="container">
+  <h2>Symptoms of Depression</h2>
+  <p>Recognizing symptoms is crucial for early intervention and effective treatment.</p>
+  <p><strong>Emotional symptoms:</strong> Persistent sadness, hopelessness, and irritability.</p>
+  <p><strong>Physical symptoms:</strong> Changes in appetite or sleep patterns, fatigue, and unexplained aches.</p>
+  <p><strong>Cognitive symptoms:</strong> Difficulty concentrating, indecisiveness, and negative thinking.</p>
+</div>
+
+<footer>
+  &copy; 2025 Ahmed Omar. All rights reserved.
+</footer>
+
+<!-- Music Player -->
+<div id="music-player" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <button id="music-btn" style="background:#005f73; border:none; color:white; padding:10px 15px; border-radius: 5px; cursor:pointer; font-weight:bold;">Play Music</button>
+  <audio id="audio" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<script>
+  const btn = document.getElementById('music-btn');
+  const audio = document.getElementById('audio');
+  let isPlaying = false;
+  btn.addEventListener('click', () => {
+    if (isPlaying) {
+      audio.pause();
+      btn.textContent = 'Play Music';
+    } else {
+      audio.play();
+      btn.textContent = 'Pause Music';
+    }
+    isPlaying = !isPlaying;
+  });
+</script>
+
+</body>
+</html>
